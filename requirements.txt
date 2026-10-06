@@ -1,4 +1,7 @@
 # Versions used for this CPU demo; YOLO weights download on first run.
+# Tested on standard CPython 3.14.3, Windows x64 (not free-threaded).
+torch==2.14.0
+torchvision==0.29.0
 ultralytics==8.4.168
 opencv-python==5.0.0.93
 pyserial==3.5

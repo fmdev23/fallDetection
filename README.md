@@ -1,5 +1,7 @@
 # Phát hiện và cảnh báo té ngã bằng tư thế và IMU giả lập
 
+**Thành viên mới tải từ GitHub:** làm theo [SETUP_TEAM.md](SETUP_TEAM.md), gồm Python, thư viện, model/video còn thiếu, Wokwi và xử lý lỗi thường gặp.
+
 **Mang đi bảo vệ:** đọc [hướng dẫn từng bước và danh sách video demo](HUONG_DAN_BAO_VE.md). Video đã kiểm tra nằm trong `test_videos`: `demo_fall_01.mp4`, `demo_fall_02.mp4`, `solo_transition.avi`. Chọn Video mặc định **không dùng Wokwi**; phải bật ô ghép Wokwi nếu muốn demo video + sensor.
 
 Đồ án Xử lý ảnh / Nhận dạng: dùng **YOLO11n Pose pretrained** để nhận tư thế, kết hợp dữ liệu MPU6050 trên Wokwi bằng luật và thời gian. Chương trình chạy trên CPU, không train model, không cần database hay dịch vụ cloud.
@@ -101,7 +103,7 @@ Camera cung cấp hình dạng/tư thế; IMU cung cấp dấu hiệu chuyển �
 Nếu chưa có thư mục `venv`, tạo một lần:
 
 ```powershell
-py -m venv venv
+py -3.14 -m venv venv
 ```
 
 Cài và kiểm tra thư viện:

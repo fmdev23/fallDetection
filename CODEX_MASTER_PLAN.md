@@ -830,3 +830,9 @@ Các phần TASK 0–12 và yêu cầu bổ sung trước ở dưới là lịch
 
 ### Handoff 06/10/2026
 Bản triển khai và dữ liệu nền đã xác minh theo mục trạng thái đầu file. 50 tests PASS; 70 video URFD có nhãn sự kiện theo chuỗi, công cụ gán nhãn chi tiết sẵn dùng. Chưa train model mới, chưa có toàn bộ nhãn hoạt động chi tiết hoặc nhãn trước ngã. Giữ các giới hạn và false warnings đã ghi nhận; không lấy development clips làm unseen test. Hai bản master plan được đồng bộ.
+
+
+### Setup thành viên mới 06/10/2026
+- Thêm SETUP_TEAM.md và liên kết README: clone repo fmdev23/fallDetection, Python 3.14.3 x64, venv riêng, tải/nạp model, nhận video bị gitignore, Build/kích hoạt Wokwi, ba chế độ GUI và xử lý lỗi.
+- Pin torch 2.14.0 / torchvision 0.29.0 đúng bản đang cài trong requirements để giảm lệch môi trường. Đã đối chiếu metadata PyPI/wheel Windows; pip check và nạp model/import trên môi trường hiện có PASS. Chưa thực hiện cài trắng trên máy thành viên khác.
+- Tài liệu và requirements mới chỉ sửa local, chưa commit/push. Model/video/.pio/venv không tự đi theo Git.
