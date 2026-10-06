@@ -1,0 +1,6 @@
+# Versions used for this CPU demo; YOLO weights download on first run.
+ultralytics==8.4.168
+opencv-python==5.0.0.93
+pyserial==3.5
+numpy==2.5.3
+pillow==12.3.0
